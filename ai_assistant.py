@@ -2,7 +2,7 @@
 No AI output is permitted to directly replace deterministic sizing math.
 """
 import os,json,urllib.request
-
+# 
 def ask_llm(system,user):
     api_key=os.getenv('OPENAI_API_KEY','').strip()
     if not api_key:raise RuntimeError('Set OPENAI_API_KEY in the environment to enable the AI assistant.')
